@@ -1,0 +1,143 @@
+body {
+    min-height: 100%;
+}
+
+
+aside {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 15%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index:1  ; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /* Black */
+
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    background: #faf0e6;
+    border-right: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+}
+
+aside img {
+    border: 1px solid #111111;
+    background: #ffffff;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+aside ul {
+    padding-top: 2%;
+    list-style: none;
+}
+
+aside ul li {
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+
+aside ul li a {
+    color: #111111;
+    text-decoration: none;
+}
+
+aside h4{
+    padding: 0px 0 0 20px ;
+}
+aside ul li:hover, aside ul a:hover
+ {
+    color: #42aaff;
+    transform: scale(1.1);
+}
+
+.title h1 {
+    font-size: 40px;
+    color: #fcfffc;
+    margin-bottom: 50px;
+}
+
+
+header {
+    padding-bottom: 10px;
+    margin-bottom: auto;
+    background: #5e755d;
+}
+
+header h4 {
+    color: #ffffff;
+    padding: 15px 3% 0 0;
+    text-align: center;
+}
+
+.head_img {
+    color: #f64c72;
+    float: left;
+    width: 30px;
+    height: auto;
+}
+
+.footer {
+    font-weight: lighter;
+    text-align: center;
+    background: #5e755d;
+    padding-top: 10px;
+    margin-top: auto;
+    color: #fff;
+}
+
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.main {
+    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+    margin-left: 12%;
+    padding: 40px 70px 40px 100px;
+}
+
+.home_img {
+    float: right;
+    padding: 30px  80px 80px;
+    width: 50%;
+    height: auto;
+}
+
+.skill_list p {
+    width: 100%;
+    color: #111111;
+    text-align: center;
+}
+
+.skill_list a {
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+}
+
+.skill_list {
+    position: page;
+    font-size: 25px;
+
+
+}
+
+.skill_list div {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    float: left;
+    width: 13%;
+    height: 200px;
+    margin: 100px;
+}
+
+.skills_img {
+    width: 100%;
+}
+

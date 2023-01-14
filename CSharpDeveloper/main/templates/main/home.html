@@ -1,0 +1,9 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block content %}
+    <div>
+    <img class="home_img" src="{{ homepage.image.url }}" alt="homepage_img">
+        {{ homepage.text|safe }}
+
+    </div>
+{% endblock %}
