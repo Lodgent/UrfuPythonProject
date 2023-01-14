@@ -3,23 +3,24 @@ body {
 }
 
 
-aside {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: 15%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index:1  ; /* Stay on top */
-    top: 0; /* Stay at the top */
+aside
+{
+    height: auto;
+    width: 15%;
+    position: fixed;
+    z-index:1  ;
+    top: 0;
     left: 0;
-    /* Black */
 
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;
     padding-top: 20px;
     background: #faf0e6;
     border-right: 3px solid #111111;
     border-bottom: 3px solid #111111;
 }
 
-aside img {
+aside img
+{
     border: 1px solid #111111;
     background: #ffffff;
     width: 150px;
@@ -27,12 +28,14 @@ aside img {
     margin-left: 35px;
 }
 
-aside ul {
+aside ul
+{
     padding-top: 2%;
     list-style: none;
 }
 
-aside ul li {
+aside ul li
+{
     display: block;
     margin-top: 20px;
     transition: all .6s ease;
@@ -88,46 +91,50 @@ header h4 {
     color: #fff;
 }
 
-.page {
+.page
+{
     overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
-.main {
-    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+.main
+{
     margin-left: 12%;
     padding: 40px 70px 40px 100px;
 }
 
-.home_img {
+.home_img
+{
     float: right;
     padding: 30px  80px 80px;
     width: 50%;
     height: auto;
 }
 
-.skill_list p {
+.skill_list p
+{
     width: 100%;
     color: #111111;
     text-align: center;
 }
 
-.skill_list a {
+.skill_list a
+{
     color: #111111;
     text-align: center;
     text-decoration: none;
 }
 
-.skill_list {
+.skill_list
+{
     position: page;
     font-size: 25px;
-
-
 }
 
-.skill_list div {
+.skill_list div
+{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -137,7 +144,8 @@ header h4 {
     margin: 100px;
 }
 
-.skills_img {
+.skills_img
+{
     width: 100%;
 }
 
