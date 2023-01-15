@@ -70,7 +70,7 @@ header {
 }
 
 header h4 {
-    color: #ffffff;
+    color: #25ebda;
     padding: 15px 3% 0 0;
     text-align: center;
 }
@@ -112,6 +112,15 @@ header h4 {
     width: 50%;
     height: auto;
 }
+
+.home_img
+{
+    float: right;
+    padding: 30px  80px 80px;
+    width: 50%;
+    height: auto;
+}
+
 
 .skill_list p
 {
