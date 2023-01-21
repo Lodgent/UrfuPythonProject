@@ -5,7 +5,7 @@ body {
 aside
 {
     height: auto;
-    width: 11%;
+    width: 15%;
     position: fixed;
     z-index:1  ;
     top: 0;
@@ -155,4 +155,9 @@ header h4 {
 {
     width: 100%;
 }
-
+table.iksweb{text-decoration: none;border-collapse:collapse;width:100%;text-align:left;}
+table.iksweb th{font-weight:normal;font-size:16px; color:#ffffff;background-color:#5e755d;}
+table.iksweb td{font-size:14px;color:#000000;}
+table.iksweb td,table.iksweb th{white-space:pre-wrap;padding:12px 20px;line-height:14px;vertical-align: middle;border: 1px solid #5e755d;}
+table.iksweb tr:hover{background-color:#f9fafb}
+table.iksweb tr:hover td{color:#354251;cursor:pointer;}
