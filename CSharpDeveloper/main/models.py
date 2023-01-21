@@ -1,7 +1,7 @@
 import datetime
 
 from django.db import models
-
+from django.urls import reverse
 
 # Create your models here
 
@@ -13,6 +13,9 @@ class Home(models.Model):
         'img', default=None,
         upload_to='home'
     )
+    class Meta:
+        verbose_name="Главная"
+        verbose_name_plural = "Главная"
 
 
 class Demand(models.Model):
@@ -32,6 +35,9 @@ class Demand(models.Model):
         default=None,
         upload_to='demand'
     )
+    class Meta:
+        verbose_name="Информация о востребованности"
+        verbose_name_plural ="Информация о востребованности"
 
 
 class Geography(models.Model):
@@ -47,6 +53,9 @@ class Geography(models.Model):
         default=None,
         upload_to='geography'
     )
+    class Meta:
+        verbose_name="География профессии"
+        verbose_name_plural ="География профессии"
 
 class Skills(models.Model):
     title = models.CharField(
@@ -55,3 +64,6 @@ class Skills(models.Model):
         default='skills'
     )
     text = models.TextField('Текст', default=None)
+    class Meta:
+        verbose_name="Информация о навыках"
+        verbose_name_plural ="Информация о навыках"
