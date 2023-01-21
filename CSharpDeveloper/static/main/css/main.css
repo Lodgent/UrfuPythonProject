@@ -2,16 +2,14 @@ body {
     min-height: 100%;
 }
 
-
 aside
 {
     height: auto;
-    width: 15%;
+    width: 11%;
     position: fixed;
     z-index:1  ;
     top: 0;
     left: 0;
-
     overflow-x: hidden;
     padding-top: 20px;
     background: #faf0e6;

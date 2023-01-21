@@ -3,8 +3,6 @@ from .models import Home, Demand, Skills, Geography
 from .utils import get_vacancies
 
 
-# Create your views here.
-
 def home(request):
     homepage = Home.objects.all()[0]
     return render(
