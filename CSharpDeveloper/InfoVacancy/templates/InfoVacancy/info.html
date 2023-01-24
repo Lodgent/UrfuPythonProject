@@ -1,0 +1,33 @@
+{% extends 'HomePage/main.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Аналитика по зарплатам для профессии C# разработчик </h1>
+<hr>
+    <h2>Статистика по годам</h2>
+
+
+<table class="strong">
+      <tr>
+        <th>Год</th>
+          <th>Средняя зарплата</th>
+        <th>Средняя зарплата C# </th>
+        <th>Количество вакансий</th>
+          <th>Количество вакансий C# </th>
+      </tr>
+    {% for item in data %}
+    <tr>
+        <td>{{ item.year }}</td>
+        <td>{{ item.salary }}</td>
+        <td>{{ item.counts }}</td>
+        <td>{{ item.salaryJob }}</td>
+        <td>{{ item.countJob }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% for item in graphs %}
+<p class="aligncenter">
+<img  src="{{ item.pic.url }}" alt="Графики Востребованности"/>
+</p>
+{% endfor %}
+{% endblock %}

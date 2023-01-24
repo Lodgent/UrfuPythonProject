@@ -1,17 +1,28 @@
 {% extends 'HomePage/main.html' %}
-{% block main %}
+{% block content%}
 {% for item in data %}
     {% if item.have_header %}
     <div>
-        <h3>{{ item.text }}</h3>
+        <hr NoShade>
+        <h2>{{ item.text }}</h2>
+        <hr NoShade>
     </div>
     {% else %}
-    <p> {item.text} </p>
         {% if item.have_picture %}
+            {% if item.right_pic %}
             <div>
-                <img src="{{ item.image.url}}">
+                <img class="home_img" src="{{ item.pic.url }}" alt="image for text"/>
             </div>
+            <p> {{item.text}} </p>
+            {% else %}
+            <p> {{item.text}} </p>
+            <div>
+                <img width="1200px" style="margin-top: 30px;margin-bottom:30px;" src="{{ item.pic.url }}" alt="image for text"/>
+            </div>
+            {% endif %}
+        {% else %}
+        <p> {{item.text}} </p>
         {% endif %}
     {% endif %}
-{%endfor%}
-{%endblock%}
+{% endfor %}
+{% endblock %}
