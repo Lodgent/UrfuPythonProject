@@ -1,27 +1,15 @@
 from django.contrib import admin
-from .models import Home, Demand, Skills, Geography
+from .models import Home, Demand, Skills, Geography, TableDemand
 from django.urls import reverse
 
 
 # Register your models here.
+admin.site.register(Home)
+admin.site.register(Demand)
+admin.site.register(TableDemand)
+admin.site.register(Geography)
+admin.site.register(Skills)
 
 
-@admin.register(Home)
-class HomePage(admin.ModelAdmin):
-    list_display = ('title',)
 
 
-
-@admin.register(Demand)
-class HomePage(admin.ModelAdmin):
-    list_display = ('title',)
-
-
-@admin.register(Geography)
-class HomePage(admin.ModelAdmin):
-    list_display = ('title',)
-
-
-@admin.register(Skills)
-class HomePage(admin.ModelAdmin):
-    list_display = ('title',)

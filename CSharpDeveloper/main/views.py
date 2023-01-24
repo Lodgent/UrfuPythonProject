@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Home, Demand, Skills, Geography
+from .models import Home, Demand, Skills, Geography, TableDemand
 from .utils import get_vacancies
 
 
@@ -17,11 +17,13 @@ def home(request):
 def info(request):
 
     infopage = Demand.objects.all()[0]
+    demandtable = TableDemand.objects.all()
     return render(
         request,
         'main/info.html',
         context={
             'infopage': infopage,
+            'tabledemand': demandtable,
         }
     )
 
@@ -51,5 +53,4 @@ def skills(request):
             'skillspage': skillspage,
         }
     )
-
 

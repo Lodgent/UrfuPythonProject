@@ -17,6 +17,15 @@ class Home(models.Model):
         verbose_name="Главная"
         verbose_name_plural = "Главная"
 
+class TableDemand(models.Model):
+    year = models.IntegerField('Год')
+    salary = models.IntegerField('Уровень зарплат')
+    count = models.IntegerField('Количество')
+    salary_by_prof = models.IntegerField('Уровень зарплат С#')
+    count_by_prof = models.IntegerField('Количество C#')
+    class Meta:
+        verbose_name = 'Статистика вакансий за год'
+        verbose_name_plural = 'Вакансии'
 
 class Demand(models.Model):
     title = models.CharField(
