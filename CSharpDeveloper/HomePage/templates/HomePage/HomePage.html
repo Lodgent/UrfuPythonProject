@@ -1,0 +1,17 @@
+{% extends 'HomePage/main.html' %}
+{% block main %}
+{% for item in data %}
+    {% if item.have_header %}
+    <div>
+        <h3>{{ item.text }}</h3>
+    </div>
+    {% else %}
+    <p> {item.text} </p>
+        {% if item.have_picture %}
+            <div>
+                <img src="{{ item.image.url}}">
+            </div>
+        {% endif %}
+    {% endif %}
+{%endfor%}
+{%endblock%}
