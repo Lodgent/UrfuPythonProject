@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("HomePage.urls")),
     path("info", include("InfoVacancy.urls")),
+    path("geography", include("Geography.urls")),
 
 ]\
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\

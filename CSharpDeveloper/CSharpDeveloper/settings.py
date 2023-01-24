@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'HomePage',
-    'InfoVacancy'
+    'InfoVacancy',
+    'Geography'
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'CSharpDeveloper.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["HomePage/templates","InfoVacancy/templates"],
+        'DIRS': ["HomePage/templates","InfoVacancy/templates","Geography/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

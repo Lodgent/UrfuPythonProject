@@ -2,13 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Procent(models.Model):
-    city = models.TextField('Город',null= True)
-    procent = models.FloatField('Доля от всех городов',default=0)
+    city = models.TextField('Город',null= True, max_length=20)
+    procent = models.TextField('Доля от всех городов',default=0)
     class Meta:
         verbose_name="Таблица долей вакансий по городам"
         verbose_name_plural = "Доля вакансий по годам"
 class Salary(models.Model):
-    city = models.TextField('Город', null=True)
+    city = models.TextField('Город', null=True,max_length=20)
     salary = models.IntegerField('Доля от всех городов', default=0)
     class Meta:
         verbose_name="Таблица уровня зарплат по городам"

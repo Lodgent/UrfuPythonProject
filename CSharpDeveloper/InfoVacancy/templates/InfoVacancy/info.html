@@ -5,9 +5,8 @@
 <h1>Аналитика по зарплатам для профессии C# разработчик </h1>
 <hr>
     <h2>Статистика по годам</h2>
-
-
-<table class="strong">
+<hr>
+<table class="strong" >
       <tr>
         <th>Год</th>
           <th>Средняя зарплата</th>
@@ -25,6 +24,8 @@
     </tr>
     {% endfor %}
 </table>
+<h2>Статистические графики</h2>
+<hr>
 {% for item in graphs %}
 <p class="aligncenter">
 <img  src="{{ item.pic.url }}" alt="Графики Востребованности"/>
