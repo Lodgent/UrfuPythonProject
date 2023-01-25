@@ -1,9 +1,12 @@
 body {
     min-height: 100%;
 }
-
+.active{
+   max-height:78px;
+}
 aside
 {
+    user-select:none;
     height: auto;
     width: 15%;
     position: fixed;
@@ -15,9 +18,23 @@ aside
     background: #faf0e6;
     border-right: 3px solid #111111;
     border-bottom: 3px solid #111111;
+    max-height: 350px;
+    overflow-y: hidden;
+    transition: 1s;
 }
+.toggle-btn{
+    cursor:pointer;
+    user-select:none;
+}
+
+
 .aligncenter {
     text-align: center;
+}
+i{
+    width:30px;
+    height:30px;
+
 }
 aside img
 {
@@ -48,6 +65,7 @@ aside ul
 {
     padding-top: 2%;
     list-style: none;
+
 }
 
 aside ul li
@@ -55,6 +73,7 @@ aside ul li
     display: block;
     margin-top: 20px;
     transition: all .6s ease;
+
 }
 
 
@@ -73,19 +92,23 @@ aside ul li:hover, aside ul a:hover
 }
 
 .title h1 {
+    user-select:none;
     font-size: 40px;
     color: #fcfffc;
     margin-bottom: 50px;
 }
 
 h1{
+    user-select:none;
     font-size: 40px;
     text-align:center;
 }
 h2{
+    user-select:none;
     text-align:center;
 }
 header {
+    user-select:none;
     padding-bottom: 15px;
     margin-bottom: auto;
     background: #1f242c;
