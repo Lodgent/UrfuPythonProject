@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Home(models.Model):
     text = models.TextField('Текст')
     have_picture = models.BooleanField('Изображение', null=True)

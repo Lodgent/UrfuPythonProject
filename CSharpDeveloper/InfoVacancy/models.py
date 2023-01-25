@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Demand(models.Model):
     year = models.IntegerField('Год',default=0)
     salary = models.IntegerField('Уровень зарплат',default=0)

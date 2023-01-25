@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Skills(models.Model):
     year = models.IntegerField('Год',default=0)
     first_skill = models.TextField('1 скилл',default=0)

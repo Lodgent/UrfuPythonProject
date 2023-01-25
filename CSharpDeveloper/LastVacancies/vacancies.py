@@ -1,7 +1,6 @@
 import datetime
 import requests
 
-
 def clean_vacancy(vacancy):
     if vacancy['salary']['from'] != None and vacancy['salary']['to'] != None and vacancy['salary']['from'] != vacancy['salary']['to']:
         vacancy['salary'] = f"от {'{0:,}'.format(vacancy['salary']['from']).replace(',', ' ')} до {'{0:,}'.format(vacancy['salary']['to']).replace(',', ' ')} {vacancy['salary']['currency']}"
@@ -13,7 +12,6 @@ def clean_vacancy(vacancy):
         vacancy['salary'] = 'Нет данных'
     vacancy['key_skills'] = ', '.join(map(lambda x: x['name'], vacancy['key_skills']))
     return vacancy
-
 
 def get_vacancies():
     try:

@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Procent(models.Model):
     city = models.TextField('Город',null= True, max_length=20)
     procent = models.TextField('Доля от всех городов',default=0)
