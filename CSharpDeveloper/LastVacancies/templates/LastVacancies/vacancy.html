@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'HomePage/main.html' %}
+{% load static %}
+{% block content %}
+    <div>
+        {% for vacancy in data %}
+            <div>
+                <h2>{{ vacancy.name }}</h2>
+                <hr>
+                <br>
+                <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
+                <p>{{ vacancy.description|safe }}</p>
+                <p><strong>Условия:</strong></p>
+                <p><b>Навыки:</b>{{ vacancy.key_skills }}</p>
+                <p><b>Компания:</b>{{ vacancy.employer.name }}</p>
+                <p><b>Расположение:</b> {{ vacancy.area.name }}</p>
+                <p><b>Дата публикации:</b> {{ vacancy.published_at}}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'HomePage/main.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Аналитика по навыкам для профессии C# разработчик </h1>
+<hr>
+    <h2>Статистика по годам</h2>
+<hr>
+<table class="strong" >
+    {% for item in data %}
+    <tr>
+        <th>{{ item.year }}</th>
+        <td>{{ item.first_skill }}</td>
+        <td>{{ item.second_skill }}</td>
+        <td>{{ item.third_skill }}</td>
+        <td>{{ item.forth_skill }}</td>
+        <td>{{ item.fifth_skill }}</td>
+        <td>{{ item.sixth_skill }}</td>
+        <td>{{ item.seventh_skill }}</td>
+        <td>{{ item.eighth_skill }}</td>
+        <td>{{ item.ninth_skill }}</td>
+        <td>{{ item.tenth_skill }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h2>Статистические графики</h2>
+<hr>
+{% for item in graphs %}
+<p class="aligncenter">
+<img  src="{{ item.pic.url }}" alt="Графики Востребованности"/>
+</p>
+{% endfor %}
+{% endblock %}

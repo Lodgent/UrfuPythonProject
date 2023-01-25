@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a57fd7f6-d251-4e76-8a93-04911edf233d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CSharpDeveloper/Geography/templates/Geography/Geography.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/templates/LastVacancies/vacancy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/templates/Skills/skills.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSharpDeveloper/CSharpDeveloper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/CSharpDeveloper/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSharpDeveloper/CSharpDeveloper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/CSharpDeveloper/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Geography/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Geography/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Geography/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Geography/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Geography/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Geography/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Geography/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Geography/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSharpDeveloper/HomePage/templates/HomePage/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/HomePage/templates/HomePage/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/InfoVacancy/templates/InfoVacancy/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/InfoVacancy/templates/InfoVacancy/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/vacancies.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/vacancies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/LastVacancies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Skills/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Skills/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Skills/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpDeveloper/Skills/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/Skills/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSharpDeveloper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSharpDeveloper/static/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpDeveloper/static/main/css/main.css" afterDir="false" />
     </list>
@@ -26,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
