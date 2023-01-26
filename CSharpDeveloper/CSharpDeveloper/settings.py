@@ -29,7 +29,7 @@ if DEBUG:
     import mimetypes
     mimetypes.add_type("application/javascript", ".js", True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lodgent.pythonanywhere.com']
 
 
 # Application definition

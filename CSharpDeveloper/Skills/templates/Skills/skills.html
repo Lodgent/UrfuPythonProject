@@ -6,6 +6,7 @@
 <hr>
     <h2>Статистика по годам</h2>
 <hr>
+<div class="flex">
 <table class="strong" >
     {% for item in data %}
     <tr>
@@ -23,7 +24,8 @@
     </tr>
     {% endfor %}
 </table>
-<h2>Статистические графики</h2>
+</div>
+<h2 style="margin-top:5%">Статистические графики</h2>
 <hr>
 {% for item in graphs %}
 <p class="aligncenter">

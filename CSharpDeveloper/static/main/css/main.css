@@ -44,8 +44,10 @@ aside img
     border-radius: 10px;
     margin-left: 35px;
 }
-table.strong{ text-decoration: none;width:auto;text-align:center;}
-table.strong th{font-weight:normal;font-size:20px; color:#ffffff;background-color:#22183d;}
+table.strong{ text-decoration: none;position: relative;
+  overflow-x: auto;
+  max-width: 100%;text-align:center;}
+table.strong th{user-select:none;font-weight:normal;font-size:20px; color:#ffffff;background-color:#22183d;}
 table.strong td{font-size:20px;color:#000000;}
 table.strong td,table.strong th{white-space:pre-wrap;padding:15px 5px;line-height:22px;vertical-align: middle;border: 1px solid #22183d;}
 table.strong tr:hover{background-color:#f9fafb}
